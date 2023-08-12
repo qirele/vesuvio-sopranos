@@ -1,7 +1,5 @@
-function component() {
-  const element = document.createElement('div');
-  element.textContent = "Hello bruheems";
-  return element;
-}
+import './Vesuvios.jpg';
+import './global.css';
+import loadHome from './loadHome.js';
 
-document.body.appendChild(component());
+loadHome();

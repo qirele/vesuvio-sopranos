@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(213, 201, 201);
+}
+
+h1 {
+  padding: 20px 60px;
+  font-size: 2.5rem;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  margin: 20px 0;
+  font-size: 1.3rem;
+}
+
+.main {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.header {
+  background-color: rgb(57, 23, 23);
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+}
+
+.left {
+  background-color: rgba(38, 10, 10);
+  padding: 20px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right {
+  background: url("Vesuvios.jpg");
+  background-position: center bottom;
+}
+
+@media screen and (max-width: 1000px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    background: url("Vesuvios.jpg");
+    background-position: center bottom;
+  }
+  
+  .right {
+    background: none;
+  }
+
+  .left {
+    background-color: rgba(38, 10, 10, 0.559);
+  }
+
+}
