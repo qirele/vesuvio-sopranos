@@ -1,11 +1,10 @@
 import './style.css'
 import { createEl } from "../../utils";
-import createHeader from '../header';
 
 export default function createHome() {
   const main = createEl("main", "home");
+  main.classList.add("grid");
 
-  const grid = createEl("div", "grid");
   const left = createEl("div", "left");
   const h2 = createEl("h2");
   h2.textContent = `Amazing restaurant from the show "The Sopranos"`;
@@ -17,11 +16,8 @@ export default function createHome() {
   left.appendChild(p1);
   left.appendChild(p2);
   const right = createEl("div", "right");
-  grid.appendChild(left);
-  grid.appendChild(right);
-
-  main.appendChild(createHeader());
-  main.appendChild(grid);
+  main.appendChild(left);
+  main.appendChild(right);
 
   return main;
 }

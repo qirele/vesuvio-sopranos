@@ -1,6 +1,5 @@
 import './style.css'
 import { createEl } from "../../utils";
-import createHeader from '../header';
 import pizza from './pizza.jpg';
 import kebab from './kebab.jpg';
 import hotdog from './hotdog.jpg';
@@ -30,7 +29,6 @@ export default function createMenu() {
   menu.appendChild(createCard("Kebab", "Delicious, nutritious, ready-available at your local kebab store", kebab));
   menu.appendChild(createCard("Hot-dog", "Simple, cheap, delicious hot dawg (hot sausage inside buns)", hotdog));
 
-  main.appendChild(createHeader());
   main.appendChild(menu);
 
   return main;

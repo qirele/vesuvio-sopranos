@@ -9,8 +9,17 @@ body {
   color: rgb(213, 201, 201);
 }
 
-main {
+#content {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#content > *:nth-child(2) {
+  flex: 1;
+}
+
+main {
   background-color: rgba(38, 10, 10);
 }
 
