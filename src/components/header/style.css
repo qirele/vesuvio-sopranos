@@ -1,0 +1,26 @@
+h1 {
+  font-size: 2.5rem;
+  font-style: italic;
+}
+
+.header {
+  background-color: rgb(57, 23, 23);
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 60px;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  font-size: 2rem;
+}
+
+.nav li {
+  cursor: pointer;
+}

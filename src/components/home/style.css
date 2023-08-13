@@ -1,0 +1,53 @@
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  margin: 20px 0;
+  font-size: 1.3rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+}
+
+.home{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.home > *:nth-child(2) {
+  flex: 1;
+}
+
+.left {
+  background-color: rgba(38, 10, 10);
+  padding: 20px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right {
+  background: url("Vesuvios.jpg");
+  background-position: center bottom;
+}
+
+@media screen and (max-width: 1000px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    background: url("Vesuvios.jpg");
+    background-position: center bottom;
+  }
+
+  .right {
+    background: none;
+  }
+
+  .left {
+    background-color: rgb(22 7 7 / 86%);
+  }
+}
