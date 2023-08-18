@@ -23,7 +23,6 @@ p {
 } */
 
 .left {
-  background-color: rgba(38, 10, 10);
   padding: 20px 60px;
   display: flex;
   flex-direction: column;
@@ -40,7 +39,7 @@ p {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
     background: url("Vesuvios.jpg");
-    background-position: center bottom;
+    background-position: center top;
   }
 
   .right {

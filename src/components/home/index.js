@@ -7,10 +7,10 @@ export default function createHome() {
 
   const left = createEl("div", "left");
   const h2 = createEl("h2");
-  h2.textContent = `Amazing restaurant from the show "The Sopranos"`;
   const p1 = createEl("p");
-  p1.textContent = `Very nice chef, with great cooking skills. Loves being in the kitchen. Loves his customers. Especially his cousin.`;
   const p2 = createEl("p");
+  p1.textContent = `Very nice chef, with great cooking skills. Loves being in the kitchen. Loves his customers. Especially the ones with close associations with Tony Soprano, his childhood friend.`;
+  h2.textContent = `Amazing restaurant from the show "The Sopranos"`;
   p2.textContent = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi autem tempora nobis totam harum provident ipsam, repudiandae id, amet corporis sapiente quibusdam, distinctio maxime est iusto hic rerum magni. Ut voluptates saepe aut hic id!`;
   left.appendChild(h2);
   left.appendChild(p1);

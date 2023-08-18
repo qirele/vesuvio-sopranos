@@ -4,7 +4,8 @@ h1 {
 }
 
 .header {
-  background-color: rgb(57, 23, 23);
+  background-color: #161b21;
+  color: #f3a950;
 }
 
 .header .container {
