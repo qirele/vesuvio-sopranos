@@ -6,7 +6,7 @@ import createHeader from './components/header';
 
 const contentDiv = document.querySelector("#content");
 contentDiv.appendChild(createHeader());
-contentDiv.appendChild(createContact());
+contentDiv.appendChild(createHome());
 changeTabLook(document.querySelector(".tab-home"));
 
 const nav = document.querySelector(".nav");
