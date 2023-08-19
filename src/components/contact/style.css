@@ -1,0 +1,41 @@
+.contact-page {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact-page {
+    grid-template-columns: 1fr;
+    grid-template-rows: 40% 60%;
+  }
+}
+
+
+.img-wrapper {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.img-wrapper img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  outline: 5px solid black;
+}
+
+.contact-right {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  max-width: 50ch;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.contact-right p {
+  margin: 0;
+}

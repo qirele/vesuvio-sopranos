@@ -6,7 +6,7 @@ import createHeader from './components/header';
 
 const contentDiv = document.querySelector("#content");
 contentDiv.appendChild(createHeader());
-contentDiv.appendChild(createMenu());
+contentDiv.appendChild(createContact());
 
 const nav = document.querySelector(".nav");
 nav.addEventListener("click", handleNavClick);
