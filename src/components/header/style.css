@@ -25,3 +25,18 @@ h1 {
 .nav li {
   cursor: pointer;
 }
+
+@media screen and (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    gap: 2px;
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+  .header .container {
+    padding: 20px 10px;
+  }
+}
