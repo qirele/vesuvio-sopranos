@@ -7,21 +7,33 @@ import createHeader from './components/header';
 const contentDiv = document.querySelector("#content");
 contentDiv.appendChild(createHeader());
 contentDiv.appendChild(createContact());
+changeTabLook(document.querySelector(".tab-home"));
 
 const nav = document.querySelector(".nav");
 nav.addEventListener("click", handleNavClick);
 function handleNavClick(e) {
-  const pageName = e.target.textContent;
-  if (pageName === "HomeMenuContact") {
+  const tab = e.target;
+  if (tab.textContent === "HomeMenuContact") {
     return;
   }
 
+  // update tab appearance
+  changeTabLook(tab);
+
   document.querySelector("main").remove();
-  if (pageName.toLowerCase() === "home") {
+  if (tab.textContent.toLowerCase() === "home") {
     contentDiv.appendChild(createHome());
-  } else if (pageName.toLowerCase() === "menu") {
+  } else if (tab.textContent.toLowerCase() === "menu") {
     contentDiv.appendChild(createMenu());
-  } else if (pageName.toLowerCase() === "contact") {
+  } else if (tab.textContent.toLowerCase() === "contact") {
     contentDiv.appendChild(createContact());
   }
+}
+
+function changeTabLook(tab) {
+  const tabs = document.querySelectorAll(".nav li");
+  tabs.forEach(el => {
+    el.classList.remove("active-tab");
+  });
+  tab.classList.add("active-tab");
 }

@@ -11,16 +11,6 @@ p {
   grid-template-columns: 4fr 6fr;
 }
 
-/* .home{
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.home > *:nth-child(2) {
-  flex: 1;
-} */
-
 .left {
   padding: 20px 60px;
   display: flex;
@@ -39,7 +29,6 @@ p {
     grid-template-columns: 1fr;
     grid-template-rows: 4fr 6fr;
   }
-
 }
 
 @media screen and (max-width: 600px) {
@@ -53,5 +42,6 @@ p {
 
   .left {
     gap: 10px;
+    padding: 20px 10px;
   }
 }

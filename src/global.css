@@ -27,3 +27,7 @@ main {
   max-width: 1400px;
   margin: 0 auto;
 }
+
+.active-tab {
+  border-bottom: 5px solid #BD8F4D;
+}
